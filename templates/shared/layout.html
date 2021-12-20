@@ -1,0 +1,266 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<title>DATA UCEN</title>
+<head>
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-T83KM3T');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/simple-sidebar.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/Whitecss.css' %}" rel="stylesheet" />
+    <link rel='shortcut icon' type='image/x-icon' href="{% static 'img/logo-ucen.png' %}"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .iniciales{
+            padding: 5px;
+            text-decoration: none;
+            color: white;
+            font-size: 25px;
+            background: #f4623a;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+            border: solid;
+            border-width: 1px;
+            text-transform: none;
+        }
+        a:link, a:visited, a:active {
+    text-decoration:none;
+        }
+
+        .dropdown-menu.scale-up.show{
+            width: 0px;
+            height: 0px;
+            background-color: #f4623a;
+
+        }
+
+        .iniciales:hover{
+            padding: 5px;
+            text-decoration: none;
+            background: #e9ecef;
+            font-size: 25px;
+            color: #f4623a;
+            text-transform: none;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+            border: solid;
+            border-width: 1px;
+        }
+        .bgImages {
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* background-image: url('~/Images/Rectangle 1.png'); */
+            background-color: #29323F;
+        }
+
+        .list-group-item {
+            background-color: transparent;
+            border: 0px solid rgba(0,0,0,.125);
+            padding: 15px 45px;
+            color: #fff;
+            /*color: black;*/
+        }
+
+        .list-group {
+            font-size: 13px;
+        }
+
+        .list-group-item-action:focus, .list-group-item-action:hover {
+            z-index: 1;
+            color: #fff;
+            text-decoration: none;
+            background-color: #657285;
+            /*background-color: #18113b;*/
+        }
+
+        .list-group-item-action {
+            width: 70%;
+        }
+
+        .border-bottom {
+            border-bottom: 1px solid gray !important;
+        }
+
+        .bg-light {
+            background-color: #29323F !important;
+        }
+
+        .list-group-flush > .list-group-item {
+            border-width: 0 0 0px;
+        }
+
+        .dropdown-menu {
+            right: 40px !important;
+            left: auto !important;
+        }
+
+        .text-left {
+            text-align: center !important;
+        }
+    </style>
+    <style>
+        @@media screen and (min-width: 768px) {
+            .table-responsive {
+                display: inline-table;
+            }
+        }
+
+        .table thead th {
+        vertical-align: middle;
+        border-bottom: 2px solid #dee2e6;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T83KM3T"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <div class="d-flex" id="wrapper" style="background-color: #f2f3f5;">
+
+        <!-- Sidebar -->
+        <div class="bgImages" id="sidebar-wrapper">
+            <div class="sidebar-heading" style="width:15rem">
+                <a href="{% url 'index' %}">
+                    <img class="logoimg" src="{% static 'img/logo-ucen.png' %}" alt="logo" style="width: 150px;"/>
+                </a>
+            </div>
+
+            
+            
+
+
+           
+            <div class="list-group list-group-flush" style="margin-top: 3%;font-size: large;">
+
+
+                <a href="{% url 'index' %}" class="list-group-item list-group-item-action" style="margin-left:13%;">
+                    <span class="sideIcon" style="margin:0 2px 0px 5px"><img src="{% static 'img/icon_Dash_1.svg' %}" /></span>
+                    IMPORTADORES
+                </a>
+                <a href="{% url 'index' %}" class="list-group-item list-group-item-action" style="margin-left:13%;">
+                    <span class="sideIcon" style="margin:0 2px 0px 5px"><img src="{% static 'img/icon_Dash_2.svg' %}" /></span>
+                    STATS
+                </a>
+                <!-- <a href="{% url 'index' %}" class="list-group-item list-group-item-action" style="margin-left:13%;">
+                    <span class="sideIcon" style="margin:0 2px 0px 5px"><img src="{% static 'img/icon_Dash_3.svg' %}" /></span>
+                    
+                </a>
+                <a href="{% url 'index' %}" class="list-group-item list-group-item-action" style="margin-left:13%;">
+                    <span class="sideIcon" style="margin:0 2px 0px 5px"><img src="{% static 'img/icon_Dash_3.svg' %}" /></span>
+                    RAGE
+                </a>
+
+                <a href="{% url 'index' %}" class="list-group-item list-group-item-action" style="margin-left:13%;">
+                    <span class="sideIcon" style="margin:0 2px 0px 5px"><img src="{% static 'img/icon_Dash_4.svg' %}" /></span>
+                    LOANS
+                </a>
+                <a href="{% url 'index' %}" class="list-group-item list-group-item-action" style="margin-left:13%;">
+                    <span class="sideIcon" style="margin:0 2px 0px 5px"><img src="{% static 'img/icon_Dash_5.svg' %}" /></span>
+                    STAKES
+                </a> -->
+                <a href="{% url 'index' %}" class="list-group-item list-group-item-action" style="margin-left:13%;">
+                    <span class="sideIcon" style="margin:0 2px 0px 5px"><img src="{% static 'img/settings.svg' %}" /></span>
+                    SETTINGS
+                </a>
+            </div>
+        </div>
+                
+
+        <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <button class="btn " id="menu-toggle" style="color: white;font-size: medium;font-weight: 700;"><i class="fa fa-bars"></i></button>
+                <div style="color:white;font-weight:700; padding:10px">Dashboard</div>
+                <!-- <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button> -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars" style="color:white;"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!--
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        
+                        <li class="nav-item active">
+                            <a class="nav-link" style="margin-right: 25px;color: #fff;" href="#">
+                                Balance disponible <br /> <span style="color:#FBB03B;font-weight:700">{{total_btc_balance}} BTC = ${{total_clp}} CLP </span>
+                            </a>
+                           
+
+                        </li>
+                        
+                        <li class="nav-item active">
+                            <a class="nav-link" style="margin-right: 25px;color: white; font-size: larger" href="#">Precio bitcoin: <span style="color:#FBB03B;font-weight:700">${{btcprice}}</span>
+                            </a>
+                        </li>
+                        <li class="nav-item" style="margin-top:10px;">
+                            
+                            <a href="#" class="select_button1" data-toggle="dropdown" ><img src="{% static 'img/profile_pic.png' %}" /><span style="margin-left: 5px;margin-right: 15px;font-size: larger;color:white;">Bienvenido <span style="font-weight: bold;">{{request.user.username}}</span></span> </a>
+                            
+                            <a href="#" class="select_button1" data-toggle="dropdown" >
+                                <div class="box-inciales"> 
+                                     <span class="iniciales">{{iniciales}}</span>
+                                     <span style="margin-left: 5px;margin-right: 15px; font-size: larger;color:white;">Bienvenido <span style="font-weight: bold;">{{request.user.username}}</span>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu scale-up" style="width:200px">
+                                <li class="user-footer">
+                                    <form action="" method="POST">
+                                        {% csrf_token %}
+                                        <button type="submit" style="color: white;background-color: #f4623a;border: none;" class="btn btn-block btn-primary use-loader col-xs-12">Logout</button>
+                                    </form>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    -->
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <li class="nav-item active">
+                              
+                            </li>
+                            <a href="#" class="select_button1" data-toggle="dropdown" >
+
+                                <div class="box-inciales"> 
+                                     <span class="iniciales">JO</span>
+                                     <span style="margin-left: 5px;margin-right: 15px; font-size: larger;color:white;">Bienvenido <span style="font-weight: bold;"></span>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu scale-up" style="width:200px">
+                                <!-- Menu Footer-->
+                                <li class="user-footer">
+                                    <form action="" method="POST">
+                                        {% csrf_token %}
+                                        <button type="submit" style="color: white;" class="btn btn-block btn-primary use-loader col-xs-12">Logout</button>
+                                    </form>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</body>
+
+
+        
+        
