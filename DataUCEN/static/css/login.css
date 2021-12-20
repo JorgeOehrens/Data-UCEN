@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+body{
+    background-color:#f7f8f9;
+    font-family: 'Quicksand', sans-serif;
+}
+a{
+    text-decoration: none !important;
+}
+
+.underlineHover{
+    color: #f15a24;
+
+}
+
+h1{
+    color: rgb(110, 110, 110);
+    font-weight: bold;
+}
+
+.divider{
+    border-bottom: 5px dotted black;
+    color: #fff2e2;
+}
+
+.button-accept-forgot{
+    background-color: #f15a24;
+    color: white !important;
+    font-weight: bold;
+}
+
+.form-login{
+    background-color:white;
+    color: rgb(110, 110, 110);   
+   
+    /*Solves a problem in which the content is being cut when the div is smaller than its' wrapper:*/
+ 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #efefef;
+    border-radius: 0;
+    margin-top: 30px;
+
+}
+
+.form-login label{
+    font-weight: bold;
+    font-size: .850rem;
+    padding: 0px 0px 8px 0px;    
+}
+
+.form-login a{
+    font-weight: 400;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-login .btn{
+    margin-top: 30px ;
+    margin-bottom: 10px;
+    font-size: .800rem;
+    background-color: #f15a24;
+    color: white;
+    font-weight: bold;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-login img{
+    width: 30%;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.form-control{
+    font-size: .800rem;
+
+}
+@media (max-height: 800px ){
+    .form-login{
+        max-height: 80%;
+    }
+}
+
+@media (max-width: 1200px ){
+    .form-login{
+        max-width: 80% !important;
+    }
+}

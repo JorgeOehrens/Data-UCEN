@@ -1,0 +1,39 @@
+﻿body {
+}
+.h1color{
+    color:#657285;
+}
+.whitecolor {
+    color: white;
+}
+.bgcolorgraay {
+    background-color: #29323F;
+}
+.dolrcolor {
+    color: #FBB03B;
+}
+.dolrrcolor {
+    color: #25DE21;
+}
+.bgcolorwhite {
+    background-color: white;
+}
+
+.graycolor {
+    color: gray;
+}
+.p200color {
+    color: #00B512;
+}
+.copbg {
+    background-color: #29323F;
+}
+/*.bgrgba {
+    background-color: rgba(101, 114, 133, 0.06);
+}*/
+.drycolor {
+    color: #29323F;
+}
+.orngcolor {
+    color: #F15A24;
+}
