@@ -20,7 +20,7 @@ class Exportador (models.Model):
     rut=models.CharField(max_length=255)
 
     def __str__(self):
-        return str(self.nombre) + ' || ' + str(self.rut) + ' || '+ str(self.pais)
+        return str(self.nombre) + ' '+ str(self.rut) + ' '+ str(self.pais)
 
 
 class Importador (models.Model):
@@ -28,14 +28,14 @@ class Importador (models.Model):
     nombre = models.CharField(max_length=255)
     rut=models.CharField(max_length=255)
     def __str__(self):
-        return str(self.nombre) +' || '+ str(self.rut)+ ' || ' + str(self.pais)
+        return str(self.nombre) +' '+ str(self.rut)+ ' ' + str(self.pais)
 
 class Producto ( models.Model):
     descripcion= models.CharField(max_length=255)
     precio= models.IntegerField()
 
     def __str__(self):
-        return str(self.descripcion) + ' || ' + str(self.precio)
+        return str(self.descripcion) + ' ' + '$' + str(self.precio)
 
 class Detalle (models.Model):
     importador = models.ForeignKey(to=Importador, on_delete=models.CASCADE)
@@ -46,4 +46,4 @@ class Detalle (models.Model):
     fecha = models.DateField(default=now)
 
     def __str__(self):
-        return str(self.importador) + ' || ' + str(self.exportador) + ' || ' + str(self.producto)
+        return str(self.importador) + ' ' + str(self.exportador) + ' ' + str(self.producto)

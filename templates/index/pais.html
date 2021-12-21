@@ -1,0 +1,46 @@
+{% include 'shared/layout.html' %}
+{% load static %}
+<div class="container">
+
+    <div class="">
+        <form method="POST">
+            {% csrf_token %}
+            <div class="card-footer px-3 border-0 d-flex align-items-center justify-content-between">
+              
+                <select name="filtrado" id="" class="form-control input-sm">
+                    {% for a in pais %}
+                    <option value="{{a.id}}">{{a.nombre}}</option>
+               
+                    {% endfor %}
+
+                </select>
+                <button type="submit" class="btn whitecolor bgcolorgraay" style="width: 50%;">FILTRAR</button>
+                
+            </div>    
+        </form>
+        <div class="table-responsive" style="margin-top: 1%;">
+            <table class="table h1color bgcolorwhite">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Rut</th>
+                      
+                    
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for a in detalle %}
+                    <tr>
+                        <td style="">{{a.nombre }}</td>
+
+                    
+                        <td style="font-weight:bold;">{{a.rut}}</td>
+
+                   
+                
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

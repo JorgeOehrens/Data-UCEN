@@ -6,11 +6,11 @@
         <form method="POST">
             {% csrf_token %}
             <div class="card-footer px-3 border-0 d-flex align-items-center justify-content-between">
-                <span class="page-link">Desde</span>
-                <input type="date" class="form-control input-sm" name="start_date">
-                <span class="page-link">Hasta</span>
-                <input type="date" class="form-control input-sm" name="end_date">
-                <button type="submit" class="btn whitecolor bgcolorgraay" style="width: 50%;">FILTRAR</button>
+
+            <input placeholder="Ingrese cantidad minima de unidades exportadas" type="text" class="form-control input-sm" name="filtrado">
+              
+            <button type="submit" class="btn whitecolor bgcolorgraay" style="width: 50%;">FILTRAR</button>
+                
             </div>    
         </form>
         <div class="table-responsive" style="margin-top: 1%;">

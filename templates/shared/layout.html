@@ -152,29 +152,30 @@
 
                 <a href="{% url 'index' %}" class="list-group-item list-group-item-action" style="margin-left:13%;">
                     <span class="sideIcon" style="margin:0 2px 0px 5px"><img src="{% static 'img/icon_Dash_1.svg' %}" /></span>
-                    IMPORTADORES
+                    FECHAS
                 </a>
-                <a href="{% url 'index' %}" class="list-group-item list-group-item-action" style="margin-left:13%;">
+                <a href="{% url 'tipo_trasporte' %}" class="list-group-item list-group-item-action" style="margin-left:13%;">
                     <span class="sideIcon" style="margin:0 2px 0px 5px"><img src="{% static 'img/icon_Dash_2.svg' %}" /></span>
-                    STATS
+                     TRANSPORTE
                 </a>
-                <!-- <a href="{% url 'index' %}" class="list-group-item list-group-item-action" style="margin-left:13%;">
+                <a href="{% url 'pais' %}" class="list-group-item list-group-item-action" style="margin-left:13%;">
                     <span class="sideIcon" style="margin:0 2px 0px 5px"><img src="{% static 'img/icon_Dash_3.svg' %}" /></span>
-                    
+                    PAIS
                 </a>
-                <a href="{% url 'index' %}" class="list-group-item list-group-item-action" style="margin-left:13%;">
+               <!-- <a href="{% url 'index' %}" class="list-group-item list-group-item-action" style="margin-left:13%;">
                     <span class="sideIcon" style="margin:0 2px 0px 5px"><img src="{% static 'img/icon_Dash_3.svg' %}" /></span>
                     RAGE
-                </a>
+                </a> -->
 
-                <a href="{% url 'index' %}" class="list-group-item list-group-item-action" style="margin-left:13%;">
+                <a href="{% url 'cantidad' %}" class="list-group-item list-group-item-action" style="margin-left:13%;">
                     <span class="sideIcon" style="margin:0 2px 0px 5px"><img src="{% static 'img/icon_Dash_4.svg' %}" /></span>
-                    LOANS
+                    CANTIDAD
                 </a>
+                 <!-- 
                 <a href="{% url 'index' %}" class="list-group-item list-group-item-action" style="margin-left:13%;">
                     <span class="sideIcon" style="margin:0 2px 0px 5px"><img src="{% static 'img/icon_Dash_5.svg' %}" /></span>
                     STAKES
-                </a> -->
+                </a>  -->
                 <a href="{% url 'index' %}" class="list-group-item list-group-item-action" style="margin-left:13%;">
                     <span class="sideIcon" style="margin:0 2px 0px 5px"><img src="{% static 'img/settings.svg' %}" /></span>
                     SETTINGS
@@ -196,42 +197,6 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!--
-                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                        
-                        <li class="nav-item active">
-                            <a class="nav-link" style="margin-right: 25px;color: #fff;" href="#">
-                                Balance disponible <br /> <span style="color:#FBB03B;font-weight:700">{{total_btc_balance}} BTC = ${{total_clp}} CLP </span>
-                            </a>
-                           
-
-                        </li>
-                        
-                        <li class="nav-item active">
-                            <a class="nav-link" style="margin-right: 25px;color: white; font-size: larger" href="#">Precio bitcoin: <span style="color:#FBB03B;font-weight:700">${{btcprice}}</span>
-                            </a>
-                        </li>
-                        <li class="nav-item" style="margin-top:10px;">
-                            
-                            <a href="#" class="select_button1" data-toggle="dropdown" ><img src="{% static 'img/profile_pic.png' %}" /><span style="margin-left: 5px;margin-right: 15px;font-size: larger;color:white;">Bienvenido <span style="font-weight: bold;">{{request.user.username}}</span></span> </a>
-                            
-                            <a href="#" class="select_button1" data-toggle="dropdown" >
-                                <div class="box-inciales"> 
-                                     <span class="iniciales">{{iniciales}}</span>
-                                     <span style="margin-left: 5px;margin-right: 15px; font-size: larger;color:white;">Bienvenido <span style="font-weight: bold;">{{request.user.username}}</span>
-                                </div>
-                            </a>
-                            <ul class="dropdown-menu scale-up" style="width:200px">
-                                <li class="user-footer">
-                                    <form action="" method="POST">
-                                        {% csrf_token %}
-                                        <button type="submit" style="color: white;background-color: #f4623a;border: none;" class="btn btn-block btn-primary use-loader col-xs-12">Logout</button>
-                                    </form>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                    -->
                     <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                         <li class="nav-item">
                             <li class="nav-item active">
