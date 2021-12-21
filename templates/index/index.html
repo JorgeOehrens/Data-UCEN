@@ -1,6 +1,43 @@
 {% include 'shared/layout.html' %}
 {% load static %}
+<div class="container">
 
-<h1>
-    hola
-</h1>
+    <div class="">
+        <div class="table-responsive">
+            <table class="table h1color bgcolorwhite">
+                <thead>
+                    <tr>
+                        <th>Importador</th>
+                        <th>Exportador</th>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Transporte</th>
+                        <th>Fecha</th>
+                    
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for a in detalle %}
+                    <tr>
+                        <td style="">{{a.importador }}</td>
+
+                    
+                        <td style="font-weight:bold;">{{a.exportador}}</td>
+
+                        <td style="text-align:left">{{a.producto}}</td>
+                        <td style="font-weight:bold;">{{a.cantidad}}</td>
+
+
+                        <td style="font-weight:bold;">{{a.tipo_transporte}}</td>
+
+                    
+                
+
+                        <td style="">{{a.fecha}}</td>
+                
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
